@@ -1,0 +1,70 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "spread": true,
+      "experimentalObjectRestSpread": true
+    },
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "rules": {
+    "semi": "error",
+    "prefer-spread": "warn",
+    "comma-dangle": [ "warn", "always-multiline" ],
+    "no-undef": "error",
+    "prefer-const": "warn",
+    "one-var": [ "warn", "never" ],
+    "no-unused-vars": "warn",
+    "quote-props": [ "warn", "as-needed" ],
+    "quotes": [ "warn", "single" ],
+    "prefer-template": "warn",
+    "template-curly-spacing": [ "error", "never" ],
+    "no-new-wrappers": "error",
+    "radix": "error",
+    "no-return-await": "warn",
+    "import/first": "warn",
+    "import/extensions": "warn",
+    "import/no-unresolved": "error",
+    "import/no-absolute-path": "error",
+    "import/no-duplicates": "error",
+    "react/require-render-return": "error",
+    "react/react-in-jsx-scope": "error",
+    "react/jsx-uses-react": "warn",
+    "react/jsx-uses-vars": "warn",
+    "react/jsx-no-undef": "error",
+    "react/jsx-no-bind": [
+      "warn",
+      {
+        "ignoreRefs": true,
+        "allowArrowFunctions": false,
+        "allowBind": false
+      }
+    ],
+    "no-console": [
+      "warn",
+      { "allow": ["warn", "error"] }
+    ]
+  },
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    }
+  },
+  "globals": {
+    "logger": true
+  }
+}
